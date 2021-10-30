@@ -1,0 +1,2 @@
+# Large-Prime-Number
+Steps for finding a large prime number: 1. Pick a random integer smaller than 10,000 which is relatively prime to 2 · 3 · 5 · 7 · 11 = 2310.  2. Pick a random integer K such that x = 2310K +n is 100-bit long (i.e. 2100 &lt; x ≤ 2 101). Note that 2100 ∼ 1.26 · 1030 so x is about 30-digit long number. The range of K is carefully chosen so that x is indeed 100-bit long. 3. Implement Miller-Rabin Primality test to test whether or not x is prime. If not, repeat step 3 with a different value of K until you find a prime. Record which K you used each time.
